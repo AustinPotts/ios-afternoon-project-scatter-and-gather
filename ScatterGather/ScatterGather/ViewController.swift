@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,9 @@ class ViewController: UIViewController {
         scatterButton.translatesAutoresizingMaskIntoConstraints = false
         scatterButton.setTitle("Toggle", for: .normal)
         scatterButton.addTarget(self, action: #selector(toggleButtonTapped), for: .touchUpInside)
+        
+        var isScattered: Bool = true
+        isScattered.toggle()
         
     }
     
