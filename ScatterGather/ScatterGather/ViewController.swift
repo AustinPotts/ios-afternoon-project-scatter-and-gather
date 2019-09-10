@@ -15,6 +15,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    
+    func configureButton() {
+        
+        let scatterButton = UIButton(type: .system)
+        scatterButton.translatesAutoresizingMaskIntoConstraints = false
+        scatterButton.setTitle("Toggle", for: .normal)
+        scatterButton.addTarget(self, action: #selector(toggleButtonTapped), for: .touchUpInside)
+        
+    }
+    
+    @objc func toggleButtonTapped() {
+        
+        
+        
+    }
 
 }
 
